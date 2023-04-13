@@ -1,0 +1,237 @@
+
+.egg.data-v-748f9a66{
+ width: 100%;
+ position: absolute;
+ z-index: 3;
+ top: 390rpx;
+}
+.egg_w.data-v-748f9a66 {
+	width: 100rpx;
+	position: absolute;
+	height: 136rpx;
+	top: 469rpx;
+	left: 322rpx;
+}
+.egg .egg_ji.data-v-748f9a66{
+ width: 70%;
+ margin-left: 15%;
+ z-index: -3;
+}
+.egg .play.data-v-748f9a66{
+ width: 170rpx;
+ position: absolute;
+ z-index: 4;
+ /* top: 645rpx; */
+ top: 585rpx;
+ left: 287rpx;
+}
+.egg .ball.data-v-748f9a66{
+ width: 75rpx;
+ position: absolute;
+ z-index: 2;
+}
+.egg .ball_1.data-v-748f9a66{
+ top: 290rpx;
+ left: 300rpx;
+}
+.egg .ball_2.data-v-748f9a66{
+ top: 295rpx;
+ left: 360rpx;
+}
+.egg .ball_3.data-v-748f9a66{
+ top: 260rpx;
+ left: 240rpx;
+}
+.egg .ball_4.data-v-748f9a66{
+ top: 260rpx;
+ left: 420rpx;
+}
+.egg .ball_5.data-v-748f9a66{
+ top: 230rpx;
+ left: 280rpx;
+}
+.egg .ball_6.data-v-748f9a66{
+ top: 230rpx;
+ left: 340rpx;
+}
+.egg .ball_7.data-v-748f9a66{
+ top: 220rpx;
+ left: 390rpx;
+}
+.egg .ball_end.data-v-748f9a66{
+top: -170rpx;
+ left: -305rpx;
+}
+.weiyi_1.data-v-748f9a66 {
+ animation: around1-748f9a66 1.5s linear infinite;
+}
+.weiyi_2.data-v-748f9a66 {
+ animation: around2-748f9a66 1.5s linear infinite;
+}
+.weiyi_3.data-v-748f9a66 {
+ animation: around3-748f9a66 1.5s linear infinite;
+}
+.weiyi_4.data-v-748f9a66 {
+ animation: around4-748f9a66 1.5s linear infinite;
+}
+.weiyi_5.data-v-748f9a66 {
+ animation: around5-748f9a66 1.5s linear infinite;
+}
+.weiyi_6.data-v-748f9a66 {
+ animation: around6-748f9a66 1.5s linear infinite;
+}
+.weiyi_7.data-v-748f9a66 {
+ animation: around7-748f9a66 1.5s linear infinite;
+}
+.go.data-v-748f9a66{
+ animation: around-748f9a66 0.3s linear 1;
+}
+
+
+/* 位移 */
+@keyframes around-748f9a66{
+100% {
+ -webkit-transform: rotate(-180deg)
+}
+}
+@keyframes around1-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(-100rpx, -200rpx)
+}
+40% {
+ -webkit-transform: translate(40rpx, -280rpx)
+}
+60% {
+ -webkit-transform: translate(150rpx, -200rpx)
+}
+80% {
+ -webkit-transform: translate(150rpx, -50rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around2-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(100rpx, -200rpx)
+}
+40% {
+ -webkit-transform: translate(-20rpx, -280rpx)
+}
+60% {
+ -webkit-transform: translate(-150rpx, -200rpx)
+}
+80% {
+ -webkit-transform: translate(-150rpx, -50rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around3-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(180rpx, 10rpx)
+}
+40% {
+ -webkit-transform: translate(240rpx, -110rpx)
+}
+60% {
+ -webkit-transform: translate(100rpx, -240rpx)
+}
+80% {
+ -webkit-transform: translate(-50rpx, -130rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around4-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(-180rpx, 10rpx)
+}
+40% {
+ -webkit-transform: translate(-240rpx, -110rpx)
+}
+60% {
+ -webkit-transform: translate(-100rpx, -240rpx)
+}
+80% {
+ -webkit-transform: translate(50rpx, -130rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around5-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(40rpx, 70rpx)
+}
+40% {
+ -webkit-transform: translate(50rpx, -210rpx)
+}
+60% {
+ -webkit-transform: translate(-80rpx, -100rpx)
+}
+80% {
+ -webkit-transform: translate(190rpx, -50rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around6-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(-150rpx, -50rpx)
+}
+40% {
+ -webkit-transform: translate(130rpx, -140rpx)
+}
+60% {
+ -webkit-transform: translate(-110rpx, -180rpx)
+}
+80% {
+ -webkit-transform: translate(-130rpx, -20rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+@keyframes around7-748f9a66 {
+0% {
+ -webkit-transform: translate(0rpx, 0rpx)
+}
+20% {
+ -webkit-transform: translate(80rpx, -50rpx)
+}
+40% {
+ -webkit-transform: translate(-180rpx, -100rpx)
+}
+60% {
+ -webkit-transform: translate(50rpx, -150rpx)
+}
+80% {
+ -webkit-transform: translate(-180rpx, -20rpx)
+}
+100% {
+ -webkit-transform: translate(0, 0)
+}
+}
+
