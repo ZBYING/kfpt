@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://172.21.1.179:3306/sbcp?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    username: sbcp
+    password: 05a3f0317299404d
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    salt: hshtmysql
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+server:
+  port: 8019
+logging:
+  file:
+    name: logs/info.log
