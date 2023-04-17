@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.example.demo.dto.*;
 import com.example.demo.pojo.WxAuthCode;
 import lombok.extern.slf4j.Slf4j;
@@ -109,5 +111,18 @@ public class BookController {
         logger.info("getQueryAuth请求====>获取getQueryAuth信息");
         logger.info(getQueryAuthDto);
         return wxImpl.getQueryAuth(getQueryAuthDto);
+    }
+
+    /**
+     * 引入请求类 获取授权码
+     *
+     * @return
+     */
+    @PostMapping("/component/getAuthCode")
+    @CrossOrigin
+    public String getAuthCode(@RequestBody getQueryAuthDto getQueryAuthDto) {
+        logger.info("getAuthCode请求====>获取getAuthCode信息");
+        logger.info(getQueryAuthDto);
+        return wxImpl.getAuthCode(getQueryAuthDto);
     }
 }

@@ -12,29 +12,26 @@
 			return {
 				urlHref: "",
 				component_appid: "wx7046963dff72596c", //第三方平台appid
-				component_appsecret: "f2fdebe6a65dba5e8e85179c0393f0ea", //第三方平台appsecret
-				pre_auth_code: "preauthcode@@@o_G_gKhoTxKGO3UoZgd-Cn-wWv87LjG-nWr6gKgSsNCjvapGeGSY_K4yyxoXAVe39uC4d9IWl3Xja1xDy3BBgw",
-				redirectUri: ''
+				redirectUri: ""
 			}
 		},
 		created() {
-			this.urlHref = `https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=${this.component_appid}&pre_auth_code=${this.pre_auth_code}&redirect_uri=${this.redirectUri}
-`
+			this.getAuthCode();
 		},
 		methods: {
-			// getToken() {
-			// 	let obj = {
-			// 		"component_appid": this.component_appid, //第三方平台appid
-			// 		"component_appsecret": this.component_appsecret, //第三方平台appsecret
-			// 		"component_verify_ticket": this.component_verify_ticket //微信后台推送的ticket
-			// 	}
-			// 	api.getComponent_access_token(obj).then(res => {
-			// 		console.log(res)
-			// 	}).catch(err => {
-			// 		console.log(err)
-			// 	})
+			getAuthCode() {
+				let obj = {
+					"component_appid": this.component_appid, //第三方平台appid
+				}
+				api.getAuthCode(obj).then(res => {
+					console.log(res.data)
+					this.urlHref = `https://mp.weixin.qq.com/cgi-bin/componentloginpage?component_appid=${this.component_appid}&pre_auth_code=${res.data}&redirect_uri=${this.redirectUri}
+					`
+				}).catch(err => {
+					console.log(err)
+				})
 
-			// }
+			}
 		}
 	}
 </script>

@@ -4140,3 +4140,474 @@ java.sql.SQLException: Access denied for user 'sbcp'@'10.4.13.85' (using passwor
 2023-04-17 16:34:46.153  INFO 12492 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2023-04-17 16:53:00.544  INFO 12492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-04-17 16:53:00.637  INFO 12492 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:05:44.912  INFO 8708 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 8708 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:05:44.914  INFO 8708 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:05:45.499  INFO 8708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:05:45.505  INFO 8708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:05:45.505  INFO 8708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:05:45.588  INFO 8708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:05:45.588  INFO 8708 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
+2023-04-17 19:05:46.018  INFO 8708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:05:46.025  INFO 8708 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.393 seconds (JVM running for 2.094)
+2023-04-17 19:09:14.956  INFO 11204 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 11204 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:09:14.966  INFO 11204 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:09:15.828  INFO 11204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:09:15.834  INFO 11204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:09:15.834  INFO 11204 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:09:15.925  INFO 11204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:09:15.925  INFO 11204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 886 ms
+2023-04-17 19:09:16.331  INFO 11204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:09:16.338  INFO 11204 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.785 seconds (JVM running for 2.207)
+2023-04-17 19:10:50.601  INFO 11204 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:10:50.602  INFO 11204 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:10:50.602  INFO 11204 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:10:50.610  WARN 11204 --- [http-nio-8019-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-04-17 19:11:02.414  INFO 11204 --- [http-nio-8019-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:11:03.857 ERROR 11204 --- [http-nio-8019-exec-2] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+java.sql.SQLSyntaxErrorException: Unknown database 'sbcp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:91) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:90) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy59.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at jdk.proxy2/jdk.proxy2.$Proxy64.selectCount(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.26.jar:5.3.26]
+	at jdk.proxy2/jdk.proxy2.$Proxy65.selectCount(Unknown Source) ~[na:na]
+	at com.example.demo.controller.BookController.getQueryAuth(BookController.java:115) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-04-17 19:11:03.864 ERROR 11204 --- [http-nio-8019-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'sbcp'
+### The error may exist in com/example/demo/mapper/WxAuthCodeMapper.java (best guess)
+### The error may involve com.example.demo.mapper.WxAuthCodeMapper.selectCount
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLSyntaxErrorException: Unknown database 'sbcp'] with root cause
+
+java.sql.SQLSyntaxErrorException: Unknown database 'sbcp'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:824) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:444) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198) ~[mysql-connector-j-8.0.32.jar:8.0.32]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-4.0.3.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80) ~[spring-jdbc-5.3.26.jar:5.3.26]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:91) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.3.jar:3.5.3]
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:163) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.query(MybatisCachingExecutor.java:90) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.3.jar:3.5.3]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.3.jar:3.5.3]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at jdk.proxy2/jdk.proxy2.$Proxy59.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:159) ~[mybatis-spring-2.0.3.jar:2.0.3]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:108) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:96) ~[mybatis-plus-core-3.3.1.tmp.jar:3.3.1.tmp]
+	at jdk.proxy2/jdk.proxy2.$Proxy64.selectCount(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.26.jar:5.3.26]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.26.jar:5.3.26]
+	at jdk.proxy2/jdk.proxy2.$Proxy65.selectCount(Unknown Source) ~[na:na]
+	at com.example.demo.controller.BookController.getQueryAuth(BookController.java:115) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:528) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.26.jar:5.3.26]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:596) ~[tomcat-embed-core-9.0.73.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.26.jar:5.3.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.73.jar:9.0.73]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-04-17 19:11:32.203  INFO 13716 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 13716 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:11:32.204  INFO 13716 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:11:32.724  INFO 13716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:11:32.729  INFO 13716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:11:32.729  INFO 13716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:11:32.808  INFO 13716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:11:32.808  INFO 13716 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 573 ms
+2023-04-17 19:11:33.191  INFO 13716 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:11:33.199  INFO 13716 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.22 seconds (JVM running for 1.63)
+2023-04-17 19:11:37.791  INFO 13716 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:11:37.792  INFO 13716 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:11:37.792  INFO 13716 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:11:37.862  INFO 13716 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:11:38.518  INFO 13716 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:13:23.579  INFO 13716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:13:23.582  INFO 13716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:13:26.758  INFO 6800 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 6800 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:13:26.759  INFO 6800 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:13:27.281  INFO 6800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:13:27.285  INFO 6800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:13:27.286  INFO 6800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:13:27.363  INFO 6800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:13:27.364  INFO 6800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 574 ms
+2023-04-17 19:13:27.743  INFO 6800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:13:27.751  INFO 6800 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.221 seconds (JVM running for 1.603)
+2023-04-17 19:13:32.578  INFO 6800 --- [http-nio-8019-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:13:32.578  INFO 6800 --- [http-nio-8019-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:13:32.579  INFO 6800 --- [http-nio-8019-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-17 19:13:32.650  INFO 6800 --- [http-nio-8019-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:13:33.271  INFO 6800 --- [http-nio-8019-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:14:19.488  INFO 6800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:14:19.491  INFO 6800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:14:22.757  INFO 588 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 588 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:14:22.758  INFO 588 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:14:23.282  INFO 588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:14:23.286  INFO 588 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:14:23.287  INFO 588 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:14:23.364  INFO 588 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:14:23.364  INFO 588 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 575 ms
+2023-04-17 19:14:23.737  INFO 588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:14:23.744  INFO 588 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.207 seconds (JVM running for 1.585)
+2023-04-17 19:14:40.080  INFO 588 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:14:40.080  INFO 588 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:14:40.081  INFO 588 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-17 19:14:40.151  INFO 588 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:14:40.773  INFO 588 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:20:46.731  INFO 588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:20:46.734  INFO 588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:20:50.001  INFO 5992 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 5992 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:20:50.003  INFO 5992 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:20:50.546  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:20:50.550  INFO 5992 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:20:50.551  INFO 5992 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:20:50.628  INFO 5992 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:20:50.628  INFO 5992 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 593 ms
+2023-04-17 19:20:51.015  INFO 5992 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:20:51.023  INFO 5992 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.244 seconds (JVM running for 1.637)
+2023-04-17 19:20:53.450  INFO 5992 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:20:53.450  INFO 5992 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:20:53.451  INFO 5992 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:20:53.522  INFO 5992 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:20:54.189  INFO 5992 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:33:36.797  INFO 5992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:33:36.800  INFO 5992 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:33:40.174  INFO 8128 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 8128 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:33:40.176  INFO 8128 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:33:40.703  INFO 8128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:33:40.708  INFO 8128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:33:40.708  INFO 8128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:33:40.787  INFO 8128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:33:40.787  INFO 8128 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
+2023-04-17 19:33:41.164  INFO 8128 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:33:41.172  INFO 8128 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.219 seconds (JVM running for 1.602)
+2023-04-17 19:34:20.145  INFO 8128 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:34:20.145  INFO 8128 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:34:20.146  INFO 8128 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:34:39.202  INFO 8128 --- [http-nio-8019-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:34:39.786  INFO 8128 --- [http-nio-8019-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:36:43.213  INFO 8128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:36:43.217  INFO 8128 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:36:46.553  INFO 8512 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 8512 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:36:46.555  INFO 8512 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:36:47.097  INFO 8512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:36:47.103  INFO 8512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:36:47.103  INFO 8512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:36:47.181  INFO 8512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:36:47.182  INFO 8512 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 594 ms
+2023-04-17 19:36:47.566  INFO 8512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:36:47.574  INFO 8512 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.256 seconds (JVM running for 1.658)
+2023-04-17 19:36:49.804  INFO 8512 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:36:49.805  INFO 8512 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:36:49.805  INFO 8512 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:36:49.854  INFO 8512 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:36:50.484  INFO 8512 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 19:40:27.481  INFO 8512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 19:40:27.485  INFO 8512 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 19:40:30.797  INFO 14208 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 14208 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 19:40:30.799  INFO 14208 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 19:40:31.355  INFO 14208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 19:40:31.360  INFO 14208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 19:40:31.361  INFO 14208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 19:40:31.440  INFO 14208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 19:40:31.440  INFO 14208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 610 ms
+2023-04-17 19:40:31.825  INFO 14208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 19:40:31.833  INFO 14208 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.261 seconds (JVM running for 1.659)
+2023-04-17 19:58:38.910  INFO 14208 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 19:58:38.911  INFO 14208 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 19:58:38.911  INFO 14208 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 19:58:38.932  INFO 14208 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : 授权事件接收URL,验证票据/biz/ticket===>
+2023-04-17 19:58:38.932  INFO 14208 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : timestamp,===>1681732216
+2023-04-17 19:58:38.932  INFO 14208 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : nonce,===>1681732216
+2023-04-17 19:58:38.932  INFO 14208 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : msgSignature,===>aad3f6b6a8a60a1965091f2dba0944f7626addff
+2023-04-17 19:58:38.932  INFO 14208 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : postData,===><xml>
+    <AppId><![CDATA[wx7046963dff72596c]]></AppId>
+    <Encrypt><![CDATA[mwHr3byZJ8S2WvJhXbbP4MT9xaQ6UJh3FNwIqY6OGujpw2AzKCrGONWIWtP2KbHmky+Bsg1vlAngFnhZfLBRfibkMjp0LtB+6vZ0MGpTdN5STE7ZrgNL2DOYFC50WfCFuL+EMr0TdoZL+iHQhvdP39qb4ARobRT2iM+sTFUiAiTWZcd+laiX9vTHoVchF42xiPXa7LaZjLF1EsAh1zRaCrYmL7/PHVxR0IC/gHa4CAoPf9KYreTM4gGxJl9XPFHzBmpYbiOVI9RUxOyeLOFD4T/gp57TJ1cqFvFGudxJ+cF7crjLKY6cTazzqHKwQfE532KEa4w0e9Yr5Y3GoYhEBJQCYUAMesSYljz9ioCUyWzNJsatL1gLsqHfmu8U81tJQ0Q2IYjhni53r1kM6IpWQwgBe6kzN0h2bynOB1i+R+5/zsyLv7QCaH9z0q4LsBselR57VuzuefGzUDoEEYPq1A==]]></Encrypt>
+</xml>
+
+2023-04-17 19:58:39.472  INFO 14208 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 19:58:40.015  INFO 14208 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 20:00:01.128  INFO 14208 --- [http-nio-8019-exec-3] c.e.demo.controller.BookController       : 授权事件接收URL,验证票据/biz/ticket===>
+2023-04-17 20:00:01.128  INFO 14208 --- [http-nio-8019-exec-3] c.e.demo.controller.BookController       : timestamp,===>1681732216
+2023-04-17 20:00:01.129  INFO 14208 --- [http-nio-8019-exec-3] c.e.demo.controller.BookController       : nonce,===>1681732216
+2023-04-17 20:00:01.129  INFO 14208 --- [http-nio-8019-exec-3] c.e.demo.controller.BookController       : msgSignature,===>aad3f6b6a8a60a1965091f2dba0944f7626addff
+2023-04-17 20:00:01.129  INFO 14208 --- [http-nio-8019-exec-3] c.e.demo.controller.BookController       : postData,===><xml>
+    <AppId><![CDATA[wx7046963dff72596c]]></AppId>
+    <Encrypt><![CDATA[mwHr3byZJ8S2WvJhXbbP4MT9xaQ6UJh3FNwIqY6OGujpw2AzKCrGONWIWtP2KbHmky+Bsg1vlAngFnhZfLBRfibkMjp0LtB+6vZ0MGpTdN5STE7ZrgNL2DOYFC50WfCFuL+EMr0TdoZL+iHQhvdP39qb4ARobRT2iM+sTFUiAiTWZcd+laiX9vTHoVchF42xiPXa7LaZjLF1EsAh1zRaCrYmL7/PHVxR0IC/gHa4CAoPf9KYreTM4gGxJl9XPFHzBmpYbiOVI9RUxOyeLOFD4T/gp57TJ1cqFvFGudxJ+cF7crjLKY6cTazzqHKwQfE532KEa4w0e9Yr5Y3GoYhEBJQCYUAMesSYljz9ioCUyWzNJsatL1gLsqHfmu8U81tJQ0Q2IYjhni53r1kM6IpWQwgBe6kzN0h2bynOB1i+R+5/zsyLv7QCaH9z0q4LsBselR57VuzuefGzUDoEEYPq1A==]]></Encrypt>
+</xml>
+
+2023-04-17 20:02:33.169  INFO 14208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 20:02:33.172  INFO 14208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 20:02:37.270  INFO 11868 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 11868 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 20:02:37.272  INFO 11868 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 20:02:37.808  INFO 11868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 20:02:37.813  INFO 11868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 20:02:37.813  INFO 11868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 20:02:37.893  INFO 11868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 20:02:37.894  INFO 11868 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 589 ms
+2023-04-17 20:02:38.277  INFO 11868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 20:02:38.285  INFO 11868 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.24 seconds (JVM running for 1.631)
+2023-04-17 20:02:43.821  INFO 11868 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 20:02:43.822  INFO 11868 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 20:02:43.822  INFO 11868 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 20:02:43.877  INFO 11868 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 20:02:44.625  INFO 11868 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 20:03:35.723  INFO 11868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 20:03:35.727  INFO 11868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 20:03:39.060  INFO 15240 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 15240 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 20:03:39.062  INFO 15240 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 20:03:39.591  INFO 15240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 20:03:39.596  INFO 15240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 20:03:39.596  INFO 15240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 20:03:39.672  INFO 15240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 20:03:39.672  INFO 15240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 577 ms
+2023-04-17 20:03:40.046  INFO 15240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 20:03:40.054  INFO 15240 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.217 seconds (JVM running for 1.604)
+2023-04-17 20:03:44.230  INFO 15240 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 20:03:44.230  INFO 15240 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 20:03:44.231  INFO 15240 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 20:03:44.254  INFO 15240 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : 授权事件接收URL,验证票据/biz/ticket===>
+2023-04-17 20:03:44.254  INFO 15240 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : timestamp,===>1681732216
+2023-04-17 20:03:44.254  INFO 15240 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : nonce,===>1681732216
+2023-04-17 20:03:44.254  INFO 15240 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : msgSignature,===>aad3f6b6a8a60a1965091f2dba0944f7626addff
+2023-04-17 20:03:44.254  INFO 15240 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : postData,===><xml>
+    <AppId><![CDATA[wx7046963dff72596c]]></AppId>
+    <Encrypt><![CDATA[mwHr3byZJ8S2WvJhXbbP4MT9xaQ6UJh3FNwIqY6OGujpw2AzKCrGONWIWtP2KbHmky+Bsg1vlAngFnhZfLBRfibkMjp0LtB+6vZ0MGpTdN5STE7ZrgNL2DOYFC50WfCFuL+EMr0TdoZL+iHQhvdP39qb4ARobRT2iM+sTFUiAiTWZcd+laiX9vTHoVchF42xiPXa7LaZjLF1EsAh1zRaCrYmL7/PHVxR0IC/gHa4CAoPf9KYreTM4gGxJl9XPFHzBmpYbiOVI9RUxOyeLOFD4T/gp57TJ1cqFvFGudxJ+cF7crjLKY6cTazzqHKwQfE532KEa4w0e9Yr5Y3GoYhEBJQCYUAMesSYljz9ioCUyWzNJsatL1gLsqHfmu8U81tJQ0Q2IYjhni53r1kM6IpWQwgBe6kzN0h2bynOB1i+R+5/zsyLv7QCaH9z0q4LsBselR57VuzuefGzUDoEEYPq1A==]]></Encrypt>
+</xml>
+
+2023-04-17 20:03:45.197  INFO 15240 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 20:03:45.778  INFO 15240 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 20:05:07.506  INFO 15240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 20:05:07.510  INFO 15240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 20:05:10.867  INFO 11964 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 11964 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 20:05:10.869  INFO 11964 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 20:05:11.404  INFO 11964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 20:05:11.409  INFO 11964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 20:05:11.409  INFO 11964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 20:05:11.488  INFO 11964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 20:05:11.488  INFO 11964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2023-04-17 20:05:11.869  INFO 11964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 20:05:11.876  INFO 11964 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.236 seconds (JVM running for 1.645)
+2023-04-17 20:05:15.585  INFO 11964 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 20:05:15.585  INFO 11964 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 20:05:15.586  INFO 11964 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-17 20:05:15.643  INFO 11964 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 20:05:16.269  INFO 11964 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 20:34:37.054  INFO 11964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 20:34:37.431  INFO 11964 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 20:34:40.714  INFO 14924 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 14924 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 20:34:40.716  INFO 14924 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 20:34:41.255  INFO 14924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 20:34:41.259  INFO 14924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 20:34:41.260  INFO 14924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 20:34:41.336  INFO 14924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 20:34:41.336  INFO 14924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 586 ms
+2023-04-17 20:34:41.715  INFO 14924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 20:34:41.723  INFO 14924 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.232 seconds (JVM running for 1.627)
+2023-04-17 20:34:58.984  INFO 14924 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 20:34:58.984  INFO 14924 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 20:34:58.985  INFO 14924 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-17 20:34:59.036  INFO 14924 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 20:34:59.699  INFO 14924 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-17 20:45:20.652  INFO 14924 --- [http-nio-8019-exec-6] c.e.demo.controller.BookController       : 授权事件接收URL,验证票据/biz/ticket===>
+2023-04-17 20:45:20.652  INFO 14924 --- [http-nio-8019-exec-6] c.e.demo.controller.BookController       : timestamp,===>1681735366
+2023-04-17 20:45:20.652  INFO 14924 --- [http-nio-8019-exec-6] c.e.demo.controller.BookController       : nonce,===>1681735366
+2023-04-17 20:45:20.652  INFO 14924 --- [http-nio-8019-exec-6] c.e.demo.controller.BookController       : msgSignature,===>e4d72ec92162ee4f708aeda227bc464b89ef2ed7
+2023-04-17 20:45:20.652  INFO 14924 --- [http-nio-8019-exec-6] c.e.demo.controller.BookController       : postData,===><xml>
+    <AppId><![CDATA[wx7046963dff72596c]]></AppId>
+    <Encrypt><![CDATA[9m71k1kLpfCV7mHPNsappnL09JL3wCvRZUYw4aWlx9mkLB/dlka0Z1XTFo9kWfUKcQZa72Cs2JmpL2zyje0tFgSMFnJwyj2+wjNxO3wnvX5//ipPUdcnATR8hoIJ41Tz8BcnbAzJTaPQpcrAf1rOEPejb8OWxxMJX06TtNPafyZCbgYUfAZ81PzB07Vl0TfVTv+HFZeMsoNTtDzbwb8MGYntmY8NJKaqLV0GSIjtRxwpAu5GksZsd457AzkFZda3BDN9VY+JrfDNfWZG3qhR8v7T9/LiXajDjcrELgGaQOFq77ehsNV2TYmhZYpB66+bvWHjJjYOgkI6S5iqWVG/2y/jcOGSoEp69vc2WryR+m6aapD9QfRaPNV3D4R4qRV6hIJCZeTFAYpxi6sXorEQ2x3g7Zcpn9oMHOkVh7qfFeGtCDVI4JxUIncQb09LxHWWs8gvr9fM73mkg2ZFMsLFyQ==]]></Encrypt>
+</xml>
+
+2023-04-17 21:18:15.062  INFO 14924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-17 21:18:15.066  INFO 14924 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-17 21:18:19.109  INFO 1296 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 17.0.2 on MuZiMU with PID 1296 (D:\demo\kfpt\target\classes started by Administrator in D:\demo\kfpt)
+2023-04-17 21:18:19.111  INFO 1296 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-04-17 21:18:19.640  INFO 1296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8019 (http)
+2023-04-17 21:18:19.645  INFO 1296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-17 21:18:19.645  INFO 1296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-17 21:18:19.724  INFO 1296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-17 21:18:19.724  INFO 1296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2023-04-17 21:18:20.114  INFO 1296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8019 (http) with context path ''
+2023-04-17 21:18:20.123  INFO 1296 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 1.239 seconds (JVM running for 1.645)
+2023-04-17 21:26:18.190  INFO 1296 --- [http-nio-8019-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-17 21:26:18.191  INFO 1296 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-17 21:26:18.191  INFO 1296 --- [http-nio-8019-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-17 21:26:18.212  INFO 1296 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : 授权事件接收URL,验证票据/biz/ticket===>
+2023-04-17 21:26:18.212  INFO 1296 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : timestamp,===>1681737751
+2023-04-17 21:26:18.212  INFO 1296 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : nonce,===>1681737751
+2023-04-17 21:26:18.212  INFO 1296 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : msgSignature,===>393802cb4b0479fa6195d81807d8307012acd759
+2023-04-17 21:26:18.212  INFO 1296 --- [http-nio-8019-exec-1] c.e.demo.controller.BookController       : postData,===><xml>
+    <AppId><![CDATA[wx7046963dff72596c]]></AppId>
+    <Encrypt><![CDATA[G1WVPFs/SmsXcyJgpqarPf40boP+TKv6vLIA7YZ9+DVrO8yn8vniPdhgjHWhicC0cyvz1cRkYsKHHgbWr2zUdpojz/ZS1AcbCJrvP3So+eQwjRg1z28i0h0bZQwFnl4r3hVBTTlqJRrmbjzYMW8qdEk7h69sJMrmO24ajhduVHU1ia9n/tdlNAQe34HBoURidfEiqe60uplM4cgVzTDe51lixQZDtoWbEvwxlqXL/qORcwQl3+qT+KYLNf+jcJ/ub3ZxS58YGvDDF5jSC/tRvQA9PmUEanhOjSSf1G3tQiuQKmlaO8IAkH5xZaTLD0Yok4AItG4BHKa4QYMUnRXB4tlWA35gMXgCeHBy4VhvVHJNu5L6qluT1g8cxhJL5P6n8chVn/4lQskQfc3fEoybmGneiGJtkpj9XD4J7B10xJJLKaCUasxmYwgZBbogTwVi6Jx6IFwzv1o0xKvBGAFYcQ==]]></Encrypt>
+</xml>
+
+2023-04-17 21:26:19.157  INFO 1296 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-17 21:26:19.702  INFO 1296 --- [http-nio-8019-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

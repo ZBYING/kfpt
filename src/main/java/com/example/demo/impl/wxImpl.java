@@ -2,6 +2,8 @@ package com.example.demo.impl;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.example.demo.controller.BookController;
 import com.example.demo.dto.*;
 import com.example.demo.pojo.WxAuthCode;
@@ -28,8 +30,6 @@ public class wxImpl {
     private com.example.demo.utils.SendPost sendPost;
     @Autowired
     private com.example.demo.mapper.WxAuthCodeMapper WxAuthCodeMapper;
-
-    private final String component_verify_ticket = "qBzItlAedSAp9az7jw2wWXX11252gV0keOPzAi-kUQaPEa4PU_FYD_EuG9Iw6Y0c_SVpMzM0eLW0ygwol5is7A";
     /**
      * 第三方平台appId
      */
@@ -37,7 +37,7 @@ public class wxImpl {
     /**
      * 第三方平台 secret
      */
-    private final String PLATFORM_APP_SECRET = "f2fdebe6a65dba5e8e85179c0393f0ea";
+    private final String PLATFORM_APP_SECRET = "3efe758682c5720af211e9aa74fb4095";
     /**
      * 第三方平台 消息加解密Key
      */
@@ -61,23 +61,15 @@ public class wxImpl {
         System.out.println("获取预授权码返回：" + jsoResBody);
         String authCode = jsoResBody.getString("pre_auth_code");
         /* 插入微信第三方平台appi， authoCode */
-//        LambdaQueryWrapper<WxAuthCode> wrapper = new LambdaQueryWrapper<>();
-//        WxAuthCode WxAuthCode = WxAuthCodeMapper.selectOne(wrapper);
-//        if (WxAuthCode == null){
-//            WxAuthCodeMapper.insert(new WxAuthCode("PLATFORM_APP_ID", "authCode", "null"));
-//        }
-//        int count = studyContentService.count(new QueryWrapper<StudyContent>()
-//                        .eq("study_title",title)
-//                //study_title为表中的列名，title为你要抓取到的数据名，.eq进行比较是否相同
-//                //count存储相同的个数
-//        );
-//
-//        if (count > 0 )
-//        {
-//            continue;	//跳出循环
-//        }else {
-//            studyContentService.save(studyContent);	//存储数据
-//        }
+        QueryWrapper queryWrapper = new QueryWrapper();
+        queryWrapper.eq("wxAppid", PLATFORM_APP_ID);
+        if (WxAuthCodeMapper.selectCount(queryWrapper) > 0) {
+            UpdateWrapper<WxAuthCode> updateWrapper = new UpdateWrapper<>();
+            updateWrapper.eq("wxAppid", PLATFORM_APP_ID).set("authCode", authCode);
+            WxAuthCodeMapper.update(null, updateWrapper);
+        } else {
+            WxAuthCodeMapper.insert(new WxAuthCode(PLATFORM_APP_ID, authCode, "null"));
+        }
     }
 
     /**
@@ -207,7 +199,7 @@ public class wxImpl {
     }
     /**
      *
-     * 获取/刷新接口调用令牌
+     * 获取授权帐号调用令牌
      *
      */
     public Object getAuthorizerAccessToken(getAuthorizerTokenDto getAuthorizerTokenDto)  {
@@ -230,7 +222,7 @@ public class wxImpl {
     }
     /**
      *
-     * 使用授权码获取授权信息
+     * 获取刷新令牌
      *
      */
     public Object getQueryAuth(getQueryAuthDto getQueryAuthDto)  {
@@ -238,17 +230,41 @@ public class wxImpl {
         JSONObject jsoResBody = null;
         try {
             String component_access_token = getQueryAuthDto.getComponent_access_token();
+            String component_appid = getQueryAuthDto.getComponent_appid();
+            /* 查询授权码 */
+            WxAuthCode wxAuthCode = WxAuthCodeMapper.selectById(component_appid);
+            String authCode = wxAuthCode.getAuthCode();
             //提交参数设置
             Map reqMap = new HashMap<>();
-            reqMap.put("component_appid", getQueryAuthDto.getComponent_appid());
-            reqMap.put("authorization_code", getQueryAuthDto.getAuthorization_code());
+            reqMap.put("component_appid", component_appid);
+            reqMap.put("authorization_code", authCode);
 
             logger.info("getAuthorizerInfo-info:------>" + reqMap);
-            jsoResBody = sendPost.SendPost(reqMap,"https://api.weixin.qq.com/cgi-bin/component/api_authorizer_token?component_access_token=" + component_access_token);
+            jsoResBody = sendPost.SendPost(reqMap,"https://api.weixin.qq.com/cgi-bin/component/api_query_auth?component_access_token=" + component_access_token);
             logger.info("getAuthorizerList-resBody:------>" + jsoResBody);
         } catch (Exception e) {
             logger.error("getAuthorizerList异常====>",e);
         }
         return jsoResBody;
+    }
+    /**
+     *
+     * 获取授权码
+     *
+     */
+    public String getAuthCode(getQueryAuthDto getQueryAuthDto)  {
+        String authCode = null;
+        try {
+            //提交参数设置
+            String appid = getQueryAuthDto.getComponent_appid();
+            logger.info("getComponent_appid-appid:------>" + appid);
+            WxAuthCode wxAuthCode = WxAuthCodeMapper.selectById(appid);
+            logger.info("wxAuthCode===========>" + wxAuthCode);
+            authCode = wxAuthCode.getAuthCode();
+            logger.info("authCode===========>" + authCode);
+        } catch (Exception e) {
+            logger.error("getAuthCode异常====>",e);
+        }
+        return authCode;
     }
 }

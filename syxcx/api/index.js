@@ -22,6 +22,20 @@ const api = {
 			method: "POST",
 			data: data,
 		})
+	},
+	getAuthCode(data) {
+		return request({
+			url: `${apiUrl}/component/getAuthCode`,
+			method: "POST",
+			data: data,
+		})
+	},
+	getQueryAuth(data) {
+		return request({
+			url: `${apiUrl}/component/getQueryAuth`,
+			method: "POST",
+			data: data,
+		})
 	}
 }
 
