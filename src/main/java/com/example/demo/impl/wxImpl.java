@@ -66,6 +66,18 @@ public class wxImpl {
 //        if (WxAuthCode == null){
 //            WxAuthCodeMapper.insert(new WxAuthCode("PLATFORM_APP_ID", "authCode", "null"));
 //        }
+//        int count = studyContentService.count(new QueryWrapper<StudyContent>()
+//                        .eq("study_title",title)
+//                //study_title为表中的列名，title为你要抓取到的数据名，.eq进行比较是否相同
+//                //count存储相同的个数
+//        );
+//
+//        if (count > 0 )
+//        {
+//            continue;	//跳出循环
+//        }else {
+//            studyContentService.save(studyContent);	//存储数据
+//        }
     }
 
     /**
