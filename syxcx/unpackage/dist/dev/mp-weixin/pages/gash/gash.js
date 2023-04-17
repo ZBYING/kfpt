@@ -114,5 +114,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     j: common_vendor.n($data.modalName == "Modal" ? "show" : "")
   };
 }
-var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-748f9a66"], ["__file", "D:/syxcx/syxcx/pages/gash/gash.vue"]]);
+var MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-748f9a66"], ["__file", "D:/syxcx/kfpt/syxcx/pages/gash/gash.vue"]]);
 wx.createPage(MiniProgramPage);

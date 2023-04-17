@@ -13,8 +13,8 @@
 				urlHref: "",
 				component_appid: "wx7046963dff72596c", //第三方平台appid
 				component_appsecret: "f2fdebe6a65dba5e8e85179c0393f0ea", //第三方平台appsecret
-				pre_auth_code: "preauthcode@@@WcrRULz5x7xbnQB-CjXb35rhJx9qjvrqpR332-An6MgqXErCH_ggbSF0yI3qhbEp6_u0uNmU59Zv3bQWqtLmHw",
-				redirectUri: '43.143.64.121:8081/wxcallback/biz/redirectUri'
+				pre_auth_code: "preauthcode@@@o_G_gKhoTxKGO3UoZgd-Cn-wWv87LjG-nWr6gKgSsNCjvapGeGSY_K4yyxoXAVe39uC4d9IWl3Xja1xDy3BBgw",
+				redirectUri: ''
 			}
 		},
 		created() {

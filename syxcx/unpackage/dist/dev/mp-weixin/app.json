@@ -1,7 +1,11 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/gash/gash"
+    "pages/gash/gash",
+    "pages/message/message",
+    "pages/tokenTable/tokenTable",
+    "pages/infoList/infoList",
+    "pages/webView/webView"
   ],
   "window": {
     "navigationBarTextStyle": "black",

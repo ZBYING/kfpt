@@ -5,6 +5,10 @@ var common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
   "./pages/gash/gash.js";
+  "./pages/message/message.js";
+  "./pages/tokenTable/tokenTable.js";
+  "./pages/infoList/infoList.js";
+  "./pages/webView/webView.js";
 }
 const _sfc_main = {
   onLaunch: function() {
@@ -17,7 +21,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/syxcx/syxcx/App.vue"]]);
+var App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/syxcx/kfpt/syxcx/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

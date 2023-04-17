@@ -102,17 +102,17 @@ export default {
 					color: '#f37b1d'
 				},
 				{
-					title: '明黄',
+					title: '扭蛋',
 					name: 'yellow',
 					color: '#fbbd08'
 				},
 				{
-					title: '橄榄',
+					title: '授权二维码',
 					name: 'olive',
 					color: '#8dc63f'
 				},
 				{
-					title: '森绿',
+					title: '获取token',
 					name: 'green',
 					color: '#39b54a'
 				},
@@ -171,13 +171,23 @@ export default {
 			const next = (index) => {
 				console.log(index)
 				if (index === 2) {
-					uni.reLaunch({
+					uni.navigateTo({
 						url: '/pages/gash/gash'
 					});
 				}
 				if (index === 3) {
-					uni.reLaunch({
+					uni.navigateTo({
 						url: '/pages/message/message'
+					});
+				}
+				if (index === 4) {
+					uni.navigateTo({
+						url: '/pages/tokenTable/tokenTable'
+					});
+				}
+				if (index === 5) {
+					uni.navigateTo({
+						url: '/pages/webView/webView'
 					});
 				}
 			}

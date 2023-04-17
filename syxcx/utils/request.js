@@ -23,9 +23,7 @@ export function request(options) {
 		let reqData, data;
 		console.log(`加密前报文==>${options.url}====>`, options.data)
 		reqData = JSON.stringify(options.data)
-		data = {
-			reqMsg: reqData,
-		};
+		data = reqData;
 		/* 发送请求报文 */
 		uni.request({
 			url,
@@ -34,7 +32,7 @@ export function request(options) {
 			dataType: options.dataType || "json",
 			timeout: 300000, //单位ms
 			header: {
-				// 'content-type': options.contentType || 'application/x-www-form-urlencoded',
+				// 'content-type': 'application/x-www-form-urlencoded',
 			},
 			success: (res) => {
 				/* 通讯解密 */

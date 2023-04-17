@@ -1,0 +1,1 @@
+<view><view class="{{['cu-list', 'menu', c, d]}}"><view wx:for="{{a}}" wx:for-item="item" wx:key="c" class="{{['cu-item', b]}}"><button class="cu-btn content" open-type="contact" bindtap="{{item.b}}"><text class="cuIcon-btn text-olive"></text><text class="text-grey">{{item.a}}</text></button></view></view></view>

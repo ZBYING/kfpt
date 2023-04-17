@@ -15,7 +15,7 @@ public class SendPost {
     @Autowired
     private RestTemplate restTemplate;
 
-    public JSONObject SendPost(Map<String, String> map, String url) {
+    public JSONObject SendPost(Map map, String url) {
 
         // 请求头设置
         HttpHeaders headers = new HttpHeaders();

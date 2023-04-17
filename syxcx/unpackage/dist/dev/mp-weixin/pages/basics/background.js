@@ -14,17 +14,17 @@ const _sfc_main = {
         color: "#f37b1d"
       },
       {
-        title: "\u660E\u9EC4",
+        title: "\u626D\u86CB",
         name: "yellow",
         color: "#fbbd08"
       },
       {
-        title: "\u6A44\u6984",
+        title: "\u6388\u6743\u4E8C\u7EF4\u7801",
         name: "olive",
         color: "#8dc63f"
       },
       {
-        title: "\u68EE\u7EFF",
+        title: "\u83B7\u53D6token",
         name: "green",
         color: "#39b54a"
       },
@@ -82,8 +82,23 @@ const _sfc_main = {
     const next = (index) => {
       console.log(index);
       if (index === 2) {
-        common_vendor.index.reLaunch({
+        common_vendor.index.navigateTo({
           url: "/pages/gash/gash"
+        });
+      }
+      if (index === 3) {
+        common_vendor.index.navigateTo({
+          url: "/pages/message/message"
+        });
+      }
+      if (index === 4) {
+        common_vendor.index.navigateTo({
+          url: "/pages/tokenTable/tokenTable"
+        });
+      }
+      if (index === 5) {
+        common_vendor.index.navigateTo({
+          url: "/pages/webView/webView"
         });
       }
     };
@@ -113,5 +128,5 @@ function _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   } : {});
 }
-var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/syxcx/syxcx/pages/basics/background.vue"]]);
+var Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["render", _sfc_render], ["__file", "D:/syxcx/kfpt/syxcx/pages/basics/background.vue"]]);
 wx.createComponent(Component);
